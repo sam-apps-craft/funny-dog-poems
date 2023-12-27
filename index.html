@@ -4,29 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Funny Dog Poem Generator</title>
+    <title>🐶 AI Funny Dog Poem Generator 🐶</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Funny Dog Poem Generator</h1>
+        <h1>🐶 AI Funny Dog Poem Generator 🐶</h1>
+        <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/436/original/images.jpg?1703690978"
+          alt=""
+          class="silly-dog"
+        />
       </header>
 
       <main>
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter your Dogs name"
+            placeholder="Enter a Dogs name"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="poem" id="poem"></div>
+        <div class="hint">i.e: Rufus, Bob or Patch</div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
